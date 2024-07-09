@@ -59,12 +59,12 @@ svg {
 .imported-concept-node {
     fill: #fabfa4;
     stroke-dasharray: 5, 5;
-    border: 2px dashed #000; /* Ajusta el grosor, estilo y color del borde */
+    border: 2px dashed #000; 
     padding: 10px;
 }
 
 .border {
-    border: 2px dashed #000; /* Ajusta el grosor, estilo y color del borde */
+    border: 2px dashed #000; 
     padding: 10px;
 }
 
@@ -131,7 +131,7 @@ svg {
     display: none;
 }
 
-/* ad display none to last 4 childs of the fift .p-menuBar */
+
 .p-MenuBar-item:nth-child(5) .p-Menu-item:nth-child(11),
 .p-MenuBar-item:nth-child(5) .p-Menu-item:nth-child(12),
 .p-MenuBar-item:nth-child(5) .p-Menu-item:nth-child(13),

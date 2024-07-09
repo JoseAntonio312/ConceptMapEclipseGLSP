@@ -115,16 +115,10 @@ public class ConceptMapValidator implements ModelValidator {
 
         String topicParentId = concept.getParent().getId();
         Optional<GModelElement> topic = modelState.getIndex().get(topicParentId);
-        GModelElement topicParent = modelState.getIndex().get(topicParentId).get();
         if (topic == null) {
             return new Marker("Concept", "The concept should be below the topic", concept.getId(), MarkerKind.ERROR);
         }
 
-        /*
-         * if (checkPosition(concept, topicParent) == true) {
-         * return new Marker("Concept", "The concept should be below the topic", concept.getId(), MarkerKind.ERROR);
-         * }
-         */
 
         if ((incomingEdges.size() > 0) && (outgoingEdges.size() > 0)) {
             return new Marker("Concept", "The concept could contributes to a circular secuence", concept.getId(),

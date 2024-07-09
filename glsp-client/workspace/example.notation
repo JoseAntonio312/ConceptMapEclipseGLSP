@@ -152,7 +152,7 @@
   </elements>
   <elements xsi:type="notation:Shape">
     <semanticElement elementId="dc2ed806-d27e-42c4-b503-576dad33dc86"/>
-    <position x="858.5663217643282" y="-1048.0078303864143"/>
+    <position x="721.9074117350401" y="-816.5987427368199"/>
     <size width="896.3668490196458" height="700.7195323090532"/>
   </elements>
   <elements xsi:type="notation:Shape">
@@ -291,8 +291,8 @@
   </elements>
   <elements xsi:type="notation:Shape">
     <semanticElement elementId="0c28b31e-b1a2-4b26-9e84-975f9292be79"/>
-    <position x="1117.6880538700732" y="-99.09786955758669"/>
-    <size width="547.5907930136418" height="474.37778955648247"/>
+    <position x="1718.9872579989405" y="-673.0652916805965"/>
+    <size width="737.5907930136416" height="474.37778955648247"/>
   </elements>
   <elements xsi:type="notation:Shape">
     <semanticElement elementId="6bf6334e-c6bf-4446-b6d9-839e749ae1e3"/>
