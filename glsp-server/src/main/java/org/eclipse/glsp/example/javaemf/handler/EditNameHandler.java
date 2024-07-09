@@ -42,10 +42,11 @@ public class EditNameHandler extends GModelOperationHandler<ApplyLabelEditOperat
          GCompartment.class);
       GCompartment gCompartment = _gCompartment.orElse(null);
 
+     
+
       if (gNodeElement.getType() == ConceptMapModelTypes.PROPERTIES) {
          modifyProperties(sLabel, gNodeElement, operation);
-      } else if ((gNodeElement.getType() == ConceptMapModelTypes.CONCEPT)
-         || (gNodeElement.getType() == ConceptMapModelTypes.FEATURE)) {
+      } else if ((gNodeElement.getType() == ConceptMapModelTypes.CONCEPT)) {
          modifyConcept(sLabel, gNodeElement, gCompartment, operation);
       } else if (gNodeElement.getType() == ConceptMapModelTypes.IMPORTED_CONCEPT) {
          modifyImportedConcept(sLabel, gNodeElement, operation);
@@ -120,18 +121,18 @@ public class EditNameHandler extends GModelOperationHandler<ApplyLabelEditOperat
 
    }
 
-   public void modifyConcept(GLabel sLabel, GNode gNodeELement, GCompartment gCompartment,
+   public void modifyConcept(GLabel sLabel, GNode gNodeElement, GCompartment gCompartment,
       ApplyLabelEditOperation operation) {
       Course course = modelState.getSemanticModel(Course.class).orElseThrow();
 
       List<Topic> topics = course.getTopic();
-
+      //throw new IllegalArgumentException("Element with provided ID cannot be found or is not a GLabel " + sLabel.getType() + sLabel.getId() + " " + gNodeElement.getType() + " "+gCompartment.getId() + " "+ gCompartment.getType());
       for (Topic topic : topics) {
 
          List<Concept> concepts = topic.getConcept();
          for (Concept concept : concepts) {
 
-            if (concept.getId() == gNodeELement.getId()) {
+            if (concept.getId() == gNodeElement.getId()) {
                switch (sLabel.getType()) {
                   case ConceptMapModelTypes.CONCEPT_NAME:
                      concept.setConcept_name(operation.getText());
@@ -139,18 +140,19 @@ public class EditNameHandler extends GModelOperationHandler<ApplyLabelEditOperat
                   case ConceptMapModelTypes.ANNOTATIONS:
                      concept.setAnnotations(operation.getText());
                      break;
-               }
-            } else {
-               List<Feature> features = concept.getFeature();
-               for (Feature feature : features) {
+                  case ConceptMapModelTypes.FEATURE_NAME:
+                  List<Feature> features = concept.getFeature();
+                  for (Feature feature : features) {
 
-                  if (gNodeELement.getId().equals(feature.getId())) {
-                     feature.setFeature_name(operation.getText());
+                     if (sLabel.getId().equals(feature.getId())) {
+                        feature.setFeature_name(operation.getText());
+                     }
                   }
+                  break;
                }
             }
-         }
 
+         }
       }
    }
 

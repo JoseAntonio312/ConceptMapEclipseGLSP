@@ -39,7 +39,7 @@ import {
 import { Container, ContainerModule } from 'inversify';
 import '../css/diagram.css';
 import { CustomTypes } from './custom-types';
-import { CourseNode, IconLabelCompartment, LabeledNode } from './model';
+import { CourseNode, IconLabel, IconLabelCompartment, LabeledNode } from './model';
 import {
     CaptionNodeView,
     ConceptMapSpecializesEdgeView,
@@ -94,7 +94,7 @@ const conceptMapDiagramModule = new ContainerModule((bind, unbind, isBound, rebi
     configureModelElement(context, CustomTypes.COMP_NAME, GCompartment, GCompartmentView);
     configureModelElement(context, CustomTypes.FEATURE, IconLabelCompartment, GCompartmentView);
     configureModelElement(context, CustomTypes.NAME, GLabel, GLabelView, { enable: [editLabelFeature] });
-    configureModelElement(context, CustomTypes.FEATURE_NAME, GLabel, GLabelView, { enable: [editLabelFeature] });
+    configureModelElement(context, CustomTypes.FEATURE_NAME, IconLabel, GLabelView, { enable: [editLabelFeature] });
     configureModelElement(context, CustomTypes.FEATURE_IMAGE, GLabel, FeatureLabelNodeView);
     configureModelElement(context, CustomTypes.COMP_AUTHOR, GCompartment, GCompartmentView);
     configureModelElement(context, CustomTypes.AUTHOR, GLabel, GLabelView, { enable: [editLabelFeature] });

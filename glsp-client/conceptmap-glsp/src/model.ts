@@ -18,6 +18,7 @@ import {
     EditableLabel,
     GChildElement,
     GCompartment,
+    GLabel,
     GModelElement,
     Hoverable,
     Nameable,
@@ -80,7 +81,16 @@ export class IconLabelCompartment extends GCompartment implements Selectable, De
     }
 }
 
-export class LabeledNode extends RectangularNode implements WithEditableLabel, Nameable {
+export class IconLabel extends GLabel implements Selectable, Deletable, Hoverable {
+    hoverFeedback = false;
+
+    override hasFeature(feature: symbol): boolean {
+        return super.hasFeature(feature) || feature === selectFeature || feature === deletableFeature || feature === hoverFeedbackFeature;
+    }
+}
+
+
+export class LabeledNode extends RectangularNode implements WithEditableLabel, Nameable, Deletable {
     get editableLabel(): (GChildElement & EditableLabel) | undefined {
         const headerNode = this.children.find(element => element.type === 'node:feature');
         if (headerNode) {

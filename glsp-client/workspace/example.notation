@@ -150,4 +150,19 @@
     <position x="87.99999999999991" y="160.99999999999994"/>
     <size width="277.5" height="83.0"/>
   </elements>
+  <elements xsi:type="notation:Shape">
+    <semanticElement elementId="dc2ed806-d27e-42c4-b503-576dad33dc86"/>
+    <position x="288.7290035561025" y="53.46712983372029"/>
+    <size width="450.0" height="450.0"/>
+  </elements>
+  <elements xsi:type="notation:Shape">
+    <semanticElement elementId="93c949e0-f480-4aee-a7e5-6bcecd46adcb"/>
+    <position x="76.99999999999991" y="40.99999999999996"/>
+    <size width="199.6869659423828" height="46.0"/>
+  </elements>
+  <elements xsi:type="notation:Shape">
+    <semanticElement elementId="f36ff872-d37b-4cbf-a0fd-718cc718ad6d"/>
+    <position x="65.99999999999991" y="29.99999999999993"/>
+    <size width="60.0" height="25.0"/>
+  </elements>
 </notation:Diagram>

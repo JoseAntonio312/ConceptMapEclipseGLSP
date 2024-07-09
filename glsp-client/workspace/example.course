@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<course_model:Course xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:course_model="http://www.uma.es/course_model" id="root" name="Course" course_name="Set the name of the course here..." author="Set your name here..."/>
+<course_model:Course xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:course_model="http://www.uma.es/course_model" id="root" name="Course" course_name="Set the name of the course here..." author="Set your name here...">
+  <topic id="dc2ed806-d27e-42c4-b503-576dad33dc86" topic_name="New Topic" annotations="Set your annotations here...">
+    <concept id="93c949e0-f480-4aee-a7e5-6bcecd46adcb" concept_name="New Concept " annotations="Your annotations here...">
+      <feature id="f36ff872-d37b-4cbf-a0fd-718cc718ad6d" feature_name="New Feature"/>
+    </concept>
+  </topic>
+</course_model:Course>

@@ -63,7 +63,7 @@ const conceptMapDiagramModule = new inversify_1.ContainerModule((bind, unbind, i
     (0, client_1.configureModelElement)(context, custom_types_1.CustomTypes.COMP_NAME, client_1.GCompartment, client_1.GCompartmentView);
     (0, client_1.configureModelElement)(context, custom_types_1.CustomTypes.FEATURE, model_1.IconLabelCompartment, client_1.GCompartmentView);
     (0, client_1.configureModelElement)(context, custom_types_1.CustomTypes.NAME, client_1.GLabel, client_1.GLabelView, { enable: [client_1.editLabelFeature] });
-    (0, client_1.configureModelElement)(context, custom_types_1.CustomTypes.FEATURE_NAME, client_1.GLabel, client_1.GLabelView, { enable: [client_1.editLabelFeature] });
+    (0, client_1.configureModelElement)(context, custom_types_1.CustomTypes.FEATURE_NAME, model_1.IconLabel, client_1.GLabelView, { enable: [client_1.editLabelFeature] });
     (0, client_1.configureModelElement)(context, custom_types_1.CustomTypes.FEATURE_IMAGE, client_1.GLabel, views_1.FeatureLabelNodeView);
     (0, client_1.configureModelElement)(context, custom_types_1.CustomTypes.COMP_AUTHOR, client_1.GCompartment, client_1.GCompartmentView);
     (0, client_1.configureModelElement)(context, custom_types_1.CustomTypes.AUTHOR, client_1.GLabel, client_1.GLabelView, { enable: [client_1.editLabelFeature] });

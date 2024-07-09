@@ -13,7 +13,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
-import { Deletable, EditableLabel, GChildElement, GCompartment, GModelElement, Hoverable, Nameable, RectangularNode, Selectable, WithEditableLabel } from '@eclipse-glsp/client';
+import { Deletable, EditableLabel, GChildElement, GCompartment, GLabel, GModelElement, Hoverable, Nameable, RectangularNode, Selectable, WithEditableLabel } from '@eclipse-glsp/client';
 export declare class CourseNode extends RectangularNode implements Nameable, WithEditableLabel {
     static readonly DEFAULT_FEATURES: symbol[];
     get editableLabel(): (GChildElement & EditableLabel) | undefined;
@@ -25,7 +25,11 @@ export declare class IconLabelCompartment extends GCompartment implements Select
     hoverFeedback: boolean;
     hasFeature(feature: symbol): boolean;
 }
-export declare class LabeledNode extends RectangularNode implements WithEditableLabel, Nameable {
+export declare class IconLabel extends GLabel implements Selectable, Deletable, Hoverable {
+    hoverFeedback: boolean;
+    hasFeature(feature: symbol): boolean;
+}
+export declare class LabeledNode extends RectangularNode implements WithEditableLabel, Nameable, Deletable {
     get editableLabel(): (GChildElement & EditableLabel) | undefined;
     get name(): string;
     hasFeature(feature: symbol): boolean;

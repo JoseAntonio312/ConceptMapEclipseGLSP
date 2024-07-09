@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.LabeledNode = exports.IconLabelCompartment = exports.isCourseNode = exports.CourseNode = void 0;
+exports.LabeledNode = exports.IconLabel = exports.IconLabelCompartment = exports.isCourseNode = exports.CourseNode = void 0;
 /********************************************************************************
  * Copyright (c) 2020-2023 EclipseSource and others.
  *
@@ -60,6 +60,16 @@ class IconLabelCompartment extends client_1.GCompartment {
     }
 }
 exports.IconLabelCompartment = IconLabelCompartment;
+class IconLabel extends client_1.GLabel {
+    constructor() {
+        super(...arguments);
+        this.hoverFeedback = false;
+    }
+    hasFeature(feature) {
+        return super.hasFeature(feature) || feature === client_1.selectFeature || feature === client_1.deletableFeature || feature === client_1.hoverFeedbackFeature;
+    }
+}
+exports.IconLabel = IconLabel;
 class LabeledNode extends client_1.RectangularNode {
     get editableLabel() {
         const headerNode = this.children.find(element => element.type === 'node:feature');

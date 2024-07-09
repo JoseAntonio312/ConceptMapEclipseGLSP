@@ -359,14 +359,13 @@ public class ConceptMapGModelFactory extends EMFNotationGModelFactory {
       if (child instanceof Feature) {
          Feature feature = (Feature) child;
          return new GCompartmentBuilder(ConceptMapModelTypes.FEATURE)
-            .id(feature.getId())
             .add(new GCompartmentBuilder(DefaultTypes.COMPARTMENT)
                .layout(GConstants.Layout.HBOX)
                .add(new GLabelBuilder(ConceptMapModelTypes.FEATURE_IMAGE)
                   .build())
                .add(new GLabelBuilder(ConceptMapModelTypes.FEATURE_NAME)
                   .text(feature.getFeature_name())
-                  .id(feature.getId() + "_feature_name")
+                  .id(feature.getId())
                   .build())
                .build())
             .build();

@@ -57,17 +57,16 @@
 </file>
 <file name="/home/alumno/Escritorio/TFG/ConceptMapGLSP-main/glsp-server/src/main/java/org/eclipse/glsp/example/javaemf/handler/EditNameHandler.java">
 <error line="1" severity="warning" message="La línea no coincide con la línea de cabecera esperada &apos;^\/\*{2,80}$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
-<error line="29" column="4" severity="warning" message="La complejidad ciclomática es 8 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
 <error line="35" column="23" severity="warning" message="El nombre &apos;_gNodeElement&apos; debe coincidir con el patrón &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
 <error line="41" column="30" severity="warning" message="El nombre &apos;_gCompartment&apos; debe coincidir con el patrón &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
-<error line="63" column="4" severity="warning" message="La complejidad ciclomática es 17 (máxima permitida es 15)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
-<error line="63" column="4" severity="warning" message="La complejidad ciclomática es 17 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
-<error line="63" column="4" severity="warning" message="La complejidad ciclomática es 17 (máxima permitida es 15)." source="complexity"/>
-<error line="71" column="13" severity="warning" message="switch sin etiqueta &quot;default&quot;." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
-<error line="123" column="4" severity="warning" message="La complejidad ciclomática es 8 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
-<error line="135" column="16" severity="warning" message="switch sin etiqueta &quot;default&quot;." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
-<error line="168" column="16" severity="warning" message="switch sin etiqueta &quot;default&quot;." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
-<error line="192" column="13" severity="warning" message="switch sin etiqueta &quot;default&quot;." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
+<error line="64" column="4" severity="warning" message="La complejidad ciclomática es 17 (máxima permitida es 15)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="64" column="4" severity="warning" message="La complejidad ciclomática es 17 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="64" column="4" severity="warning" message="La complejidad ciclomática es 17 (máxima permitida es 15)." source="complexity"/>
+<error line="72" column="13" severity="warning" message="switch sin etiqueta &quot;default&quot;." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
+<error line="124" column="4" severity="warning" message="La complejidad ciclomática es 9 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="136" column="16" severity="warning" message="switch sin etiqueta &quot;default&quot;." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
+<error line="170" column="16" severity="warning" message="switch sin etiqueta &quot;default&quot;." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
+<error line="194" column="13" severity="warning" message="switch sin etiqueta &quot;default&quot;." source="com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"/>
 </file>
 <file name="/home/alumno/Escritorio/TFG/ConceptMapGLSP-main/glsp-server/src/main/java/org/eclipse/glsp/example/javaemf/handler/CreateFeatureNodeHandler.java">
 <error line="1" severity="warning" message="La línea no coincide con la línea de cabecera esperada &apos;^\/\*{2,80}$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
