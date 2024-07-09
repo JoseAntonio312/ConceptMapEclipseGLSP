@@ -127,8 +127,8 @@ public class ConceptMapValidator implements ModelValidator {
          */
 
         if ((incomingEdges.size() > 0) && (outgoingEdges.size() > 0)) {
-            return new Marker("Concept", "The concept contributes to a circular secuence", concept.getId(),
-                MarkerKind.ERROR);
+            return new Marker("Concept", "The concept could contributes to a circular secuence", concept.getId(),
+                MarkerKind.WARNING);
         }
 
         if (check == true) {
