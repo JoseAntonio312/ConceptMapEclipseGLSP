@@ -88,13 +88,22 @@ public class ConceptMapValidator implements ModelValidator {
 
     protected Marker selfElement(final GModelElement element) {
         Collection<GEdge> outgoingEdges = modelState.getIndex().getOutgoingEdges(element);
-
+        Collection<GEdge> incomingEdges = modelState.getIndex().getIncomingEdges(element);
         for (GEdge edgeO : outgoingEdges) {
             if ((edgeO.getSource() == element) && (edgeO.getTarget() == element)) {
-                return new Marker("Bad Connection", "A topic cannot connect to itself", element.getId(),
+                return new Marker("Bad Connection", "A element cannot connect to itself", element.getId(),
                     MarkerKind.ERROR);
             }
         }
+
+        for (GEdge edgeO : incomingEdges) {
+            if ((edgeO.getSource() == element) && (edgeO.getTarget() == element)) {
+                return new Marker("Bad Connection", "A element cannot connect to itself", element.getId(),
+                    MarkerKind.ERROR);
+            }
+        }
+
+
         return null;
 
     }

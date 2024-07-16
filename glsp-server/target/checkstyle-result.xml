@@ -6,10 +6,10 @@
 <error line="1" severity="warning" message="La línea no coincide con la línea de cabecera esperada &apos;^\/\*{2,80}$&apos;." source="com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"/>
 <error line="53" column="5" severity="warning" message="La complejidad ciclomática es 10 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
 <error line="75" column="19" severity="warning" message="Se puede simplificar la expresión." source="com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheck"/>
-<error line="102" column="5" severity="warning" message="La complejidad ciclomática es 10 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
-<error line="134" column="19" severity="warning" message="Se puede simplificar la expresión." source="com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheck"/>
-<error line="166" column="5" severity="warning" message="La complejidad ciclomática es 9 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
-<error line="186" column="19" severity="warning" message="Se puede simplificar la expresión." source="com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheck"/>
+<error line="111" column="5" severity="warning" message="La complejidad ciclomática es 10 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="137" column="19" severity="warning" message="Se puede simplificar la expresión." source="com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheck"/>
+<error line="169" column="5" severity="warning" message="La complejidad ciclomática es 9 (máxima permitida es 7)." source="com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"/>
+<error line="189" column="19" severity="warning" message="Se puede simplificar la expresión." source="com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheck"/>
 </file>
 <file name="/home/alumno/Escritorio/TFG/ConceptMapGLSP-main/glsp-server/src/main/java/org/eclipse/glsp/example/javaemf/launch/ConceptMapServerLauncher.java">
 </file>

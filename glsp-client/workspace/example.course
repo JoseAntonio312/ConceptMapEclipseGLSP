@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <course_model:Course xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:course_model="http://www.uma.es/course_model" id="root" name="Course" course_name="Set the name of the course here..." author="Set your name here...">
+  <properties id="d35adc58-831f-48e2-8f64-ddf7d7c0ced5" name="NewProperties19" bibliography="Introduce your bibliography here..." previous_requirements="Introduce the previous requirements here..." skills="Introduce the skills here..." assessment_criteria="Introduce the assesment criteria here..." subject="Fundamentos del software de Comunicaciones" area="Introduce the area here..." offer="Introduce the offer here..." semester="Introduce the semester here..." credits="6" large_group_hours="42" small_group_hours="Introduce the Small group Hours here..." coordinator="Jesus"/>
   <topic id="dc2ed806-d27e-42c4-b503-576dad33dc86" topic_name="Sockets" annotations="Canal de informacion para intercambiar info entre procesos">
     <concept id="c04946bc-87ba-4538-9a73-1aaf3aad79e4" concept_name="Net DB" annotations="Software">
       <uses id="80f66e53-17b7-4984-bf36-e0ea641ba465" origin="c04946bc-87ba-4538-9a73-1aaf3aad79e4" destination="8837388b-353e-4ebf-8f55-7f32d949abbf"/>
@@ -56,5 +57,13 @@
       <feature id="0e7e69ad-c918-439b-b747-80e94ec376b6" feature_name="Sin estado"/>
     </concept>
     <concept id="a3863724-111a-48e9-8463-e31118cc042b" concept_name="URL" annotations="Your annotations here..."/>
+  </topic>
+  <topic id="94e345dc-7789-4c10-a22e-0674c83953c7" topic_name="Software" annotations="Set your annotations here...">
+    <after id="bc20cf82-7b00-491e-a6e9-496e1a891c49" origin="94e345dc-7789-4c10-a22e-0674c83953c7" destination="94e345dc-7789-4c10-a22e-0674c83953c7"/>
+    <concept id="c0ea5baf-770e-4dfe-b71a-ad6f37e01153" concept_name="New Concept " annotations="Your annotations here..."/>
+    <concept id="72500327-fa87-4492-a33a-dbcf52348be4" concept_name="New Concept " annotations="Your annotations here...">
+      <uses id="7db73707-b60e-4f9c-a8ca-3a8797f4b96b" origin="72500327-fa87-4492-a33a-dbcf52348be4" destination="72500327-fa87-4492-a33a-dbcf52348be4"/>
+    </concept>
+    <concept id="48c89063-78ef-4605-8968-2f89ba1189d1" concept_name="New Concept " annotations="Your annotations here..."/>
   </topic>
 </course_model:Course>
