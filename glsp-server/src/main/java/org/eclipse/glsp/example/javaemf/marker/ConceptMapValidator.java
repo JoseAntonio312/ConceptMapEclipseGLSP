@@ -42,11 +42,17 @@ public class ConceptMapValidator implements ModelValidator {
     @Override
     public List<Marker> doLiveValidation(final GModelElement element) {
         List<Marker> markers = new ArrayList<>();
-        if ((element.getType() == "node:topic") || (element.getType() == "node:concept")
-            || (element.getType() == "node:imported_concept")) {
+        if (element.getType() == "node:topic") {
             markers.add(selfElement(element));
         }
 
+        if (element.getType() == "node:concept") {
+            markers.add(selfElement(element));
+        }
+
+        if (element.getType() == "node:imported_concept") {
+            markers.add(selfElement(element));
+        }
         return markers;
     }
 
@@ -89,22 +95,18 @@ public class ConceptMapValidator implements ModelValidator {
     protected Marker selfElement(final GModelElement element) {
         Collection<GEdge> outgoingEdges = modelState.getIndex().getOutgoingEdges(element);
         Collection<GEdge> incomingEdges = modelState.getIndex().getIncomingEdges(element);
-        for (GEdge edgeO : outgoingEdges) {
-            if ((edgeO.getSource() == element) && (edgeO.getTarget() == element)) {
-                return new Marker("Bad Connection", "A element cannot connect to itself", element.getId(),
-                    MarkerKind.ERROR);
+        List<GEdge> allEdges = new ArrayList<>();
+        allEdges.addAll(outgoingEdges);
+        allEdges.addAll(incomingEdges);
+
+        for (GEdge edge : allEdges) {
+            if (edge.getSource().equals(element) && edge.getTarget().equals(element)) {
+                return new Marker("Bad Connection", "An element cannot connect to itself x", element.getId(),
+                MarkerKind.ERROR);
             }
         }
 
-        for (GEdge edgeO : incomingEdges) {
-            if ((edgeO.getSource() == element) && (edgeO.getTarget() == element)) {
-                return new Marker("Bad Connection", "A element cannot connect to itself", element.getId(),
-                    MarkerKind.ERROR);
-            }
-        }
-
-
-        return null;
+        return new Marker(null, null, null, null);
 
     }
 

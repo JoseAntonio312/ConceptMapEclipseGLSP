@@ -59,10 +59,10 @@
     <concept id="a3863724-111a-48e9-8463-e31118cc042b" concept_name="URL" annotations="Your annotations here..."/>
   </topic>
   <topic id="94e345dc-7789-4c10-a22e-0674c83953c7" topic_name="Software" annotations="Set your annotations here...">
-    <after id="bc20cf82-7b00-491e-a6e9-496e1a891c49" origin="94e345dc-7789-4c10-a22e-0674c83953c7" destination="94e345dc-7789-4c10-a22e-0674c83953c7"/>
+    <after id="01a263fe-8c74-496b-a21f-48b950a45b52" origin="94e345dc-7789-4c10-a22e-0674c83953c7" destination="94e345dc-7789-4c10-a22e-0674c83953c7"/>
     <concept id="c0ea5baf-770e-4dfe-b71a-ad6f37e01153" concept_name="New Concept " annotations="Your annotations here..."/>
     <concept id="72500327-fa87-4492-a33a-dbcf52348be4" concept_name="New Concept " annotations="Your annotations here...">
-      <uses id="7db73707-b60e-4f9c-a8ca-3a8797f4b96b" origin="72500327-fa87-4492-a33a-dbcf52348be4" destination="72500327-fa87-4492-a33a-dbcf52348be4"/>
+      <uses id="0e704035-b7d6-4c9d-8181-59ad031f7399" origin="72500327-fa87-4492-a33a-dbcf52348be4" destination="72500327-fa87-4492-a33a-dbcf52348be4"/>
     </concept>
     <concept id="48c89063-78ef-4605-8968-2f89ba1189d1" concept_name="New Concept " annotations="Your annotations here..."/>
   </topic>
